@@ -1,18 +1,6 @@
-# hexanest-nikahan
+# Hexanest-Nikahan
 
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
+Contoh Website Nikah atau Wedding dari Hexanest.ID
 
 ## Project Setup
 
@@ -20,20 +8,46 @@ See [Vite Configuration Reference](https://vite.dev/config/).
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Kompilasi dan Hot-Reload untuk Pengembangan
 
 ```sh
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+### Pemeriksaan Tipe, Kompilasi dan Minifikasi untuk Produksi
 
 ```sh
 npm run build
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+### Lint dengan [ESLint](https://eslint.org/)
 
 ```sh
 npm run lint
 ```
+
+## Project Setup dengan Docker
+
+### Build Docker Image
+```sh
+docker build -t hexanest-nikahan .
+```
+
+### Menjalankan Docker Container
+```sh
+docker run -d -p 3000:3000 --name hexanest-app hexanest-nikahan
+```
+
+### Menghentikan Docker Container
+```sh
+docker stop hexanest-app
+```
+
+### Menjalankan Kembali Docker Container
+```sh
+docker start hexanest-app
+```
+
+
+
+
