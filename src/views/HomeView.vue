@@ -17,4 +17,6 @@ const goToAbout = () => {
       <HomeComponent />
       <button type="button" @click="goToAbout" class="p-2 bg-red-500 cursor-pointer">Go to About Page</button>
     </div>
+
+    
 </template>
