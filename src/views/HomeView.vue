@@ -5,7 +5,7 @@
     </div>
     <p class="mt-4 text-lg text-gray-700">hari yang indah di bulan april</p>
     <p class="text-lg text-gray-700">Kami berdua akan menikah</p>
-    <h1 class="text-4xl font-bold mt-2">Hafiz ♥ Gea</h1>
+    <h1 class="text-4xl font-bold mt-2">Hadi ♥ Marin</h1>
     <p class="mt-2 text-lg text-gray-700">Sabtu, 25 April 2020, pukul 17.00</p>
   </div>
 </template>
