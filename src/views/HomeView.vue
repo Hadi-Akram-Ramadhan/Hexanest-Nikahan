@@ -1,13 +1,13 @@
 <template>
   <main class="w-full min-h-screen bg-yellow-50 h-full">
     <!-- Hero Section -->
-    <section class="container mx-auto px-4 py-16">
+    <section class="container mx-auto px-4 h-screen flex items-center justify-center">
       <div class="flex flex-col items-center">
         <div class="rounded-full overflow-hidden border-8 border-white shadow-lg mb-8">
           <img
             src="/src/assets/foto/main_img.jpg"
             alt="Couple"
-            class="w-[300px] h-[300px] md:w-[500px] md:h-[500px] object-cover"
+            class="w-[608x] h-[608px] md:w-[608px] md:h-[608px] object-cover"
           />
         </div>
 
@@ -27,6 +27,13 @@
         <img src="/src/assets/foto/main_img.jpg" alt="Photo 2" class="w-full h-64 object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow" />
         <img src="/src/assets/foto/main_img.jpg" alt="Photo 3" class="w-full h-64 object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow" />
         <img src="/src/assets/foto/main_img.jpg" alt="Photo 4" class="w-full h-64 object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow" />
+        <img src="/src/assets/foto/main_img.jpg" alt="Photo 5" class="w-full h-64 object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow" />
+        <img src="/src/assets/foto/main_img.jpg" alt="Photo 6" class="w-full h-64 object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow" />
+        <img src="/src/assets/foto/main_img.jpg" alt="Photo 7" class="w-full h-64 object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow" />
+        <img src="/src/assets/foto/main_img.jpg" alt="Photo 8" class="w-full h-64 object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow" />
+        <img src="/src/assets/foto/main_img.jpg" alt="Photo 9" class="w-full h-64 object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow" />
+        <img src="/src/assets/foto/main_img.jpg" alt="Photo 10" class="w-full h-64 object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow" />
+
       </div>
     </section>
   </main>
