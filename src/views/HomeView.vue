@@ -11,11 +11,11 @@
           />
         </div>
 
-        <div class="text-center space-y-3">
-          <p class="text-lg text-gray-700">hari yang indah di bulan april</p>
-          <p class="text-lg text-gray-700">Kami berdua akan menikah</p>
-          <h1 class="text-4xl md:text-5xl font-bold">Hadi ♥ Marin</h1>
-          <p class="text-lg text-gray-700">Sabtu, 25 April 2020, pukul 17.00</p>
+        <div class="text-center">
+          <p class="text-[16px] text-gray-700">hari yang indah di bulan april</p>
+          <p class="text-[16px] text-gray-700 mb-4">Kami berdua akan menikah</p>
+          <h1 class="text-[24px] md:text-5xl font-bold mb-6">Hadooyy ♥ Hutao</h1>
+          <p class="text-[14px] text-gray-700">Sabtu, 25 April 2020, pukul 17.00</p>
         </div>
       </div>
     </section>
