@@ -1,38 +1,54 @@
 <template>
   <div class="w-full min-h-screen bg-yellow-50 h-full">
     <!-- Form Section -->
-    <section class="container mx-auto py-12">
+    <section class="container mx-auto px-4 py-8 md:py-12">
       <div class="text-center mb-8">
-        <h2 class="text-[24px] md:text-4xl font-semibold mb-2 font-['Times_New_Roman'] text-gray-700">Bisakah Kamu meninggalkan Pesan untuk Kami?</h2>
-        <p class="text-gray-600 font-['Times_New_Roman']">Kami Akan Baca Semuanya</p>
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4 font-['Times_New_Roman'] text-gray-700">Bisakah Kamu meninggalkan Pesan untuk Kami?</h2>
+        <p class="text-base sm:text-lg md:text-xl text-gray-600 font-['Times_New_Roman']">Kami Akan Baca Semuanya</p>
       </div>
 
-      <div class="max-w-2xl mx-auto space-y-4">
-        <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-          <input
-            v-model="formData.name"
-            type="text"
-            placeholder="Siapa kamu?"
-            class="w-full p-3 mb-4 border border-gray-200 rounded-lg focus:outline-none focus:border-yellow-400"
-          >
-          <textarea
-            v-model="formData.message"
-            placeholder="Pesan Anda?"
-            rows="4"
-            class="w-full p-3 mb-4 border border-gray-200 rounded-lg focus:outline-none focus:border-yellow-400"
-          ></textarea>
-          <button
-            @click="submitForm"
-            class="w-full py-3 bg-yellow-400 text-gray-700 rounded-lg hover:bg-yellow-500 transition-colors"
-          >
-            {{ isSubmitting ? 'Mengirim...' : 'Kirim' }}
-          </button>
+      <div class="max-w-2xl mx-auto space-y-4 px-4 sm:px-6">
+        <div class="bg-white p-4 sm:p-6 rounded-lg shadow-sm border border-gray-100">
+          <form @submit.prevent="submitForm" class="space-y-4">
+            <div>
+              <input
+                v-model="formData.name"
+                type="text"
+                placeholder="Siapa kamu?"
+                class="w-full p-3 border border-gray-200 rounded-lg focus:outline-none focus:border-yellow-400 focus:ring-2 focus:ring-yellow-200 transition-all"
+                :disabled="isSubmitting"
+              >
+            </div>
+            <div>
+              <textarea
+                v-model="formData.message"
+                placeholder="Pesan Anda?"
+                rows="4"
+                class="w-full p-3 border border-gray-200 rounded-lg focus:outline-none focus:border-yellow-400 focus:ring-2 focus:ring-yellow-200 transition-all resize-none"
+                :disabled="isSubmitting"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="w-full py-3 bg-yellow-600 text-white rounded-lg hover:bg-yellow-700 active:bg-yellow-800 disabled:opacity-50 disabled:cursor-not-allowed transition-all font-medium text-lg"
+              :disabled="isSubmitting || !formData.name || !formData.message"
+            >
+              <span v-if="isSubmitting" class="flex items-center justify-center gap-2">
+                <svg class="animate-spin h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                  <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                Mengirim...
+              </span>
+              <span v-else>Kirim Pesan</span>
+            </button>
+          </form>
         </div>
       </div>
 
-      <div class="text-center mt-8">
-        <h3 class="text-[24px] md:text-4xl font-semibold mb-2 font-['Times_New_Roman'] text-gray-700">Terima Kasih</h3>
-        <p class="text-gray-600 font-['Times_New_Roman']">Hafiz ❤ Gea</p>
+      <div class="text-center mt-12">
+        <h3 class="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4 font-['Times_New_Roman'] text-gray-700">Terima Kasih</h3>
+        <p class="text-base sm:text-lg md:text-xl text-gray-600 font-['Times_New_Roman']">Hafiz ❤ Gea</p>
       </div>
     </section>
   </div>
@@ -70,7 +86,6 @@ const submitForm = async () => {
     const result = await response.json()
 
     if (result.success) {
-      // Reset form
       formData.value = {
         name: '',
         message: '',
