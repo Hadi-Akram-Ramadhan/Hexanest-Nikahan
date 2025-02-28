@@ -9,39 +9,41 @@
 
       <div class="max-w-2xl mx-auto space-y-4">
         <!-- Guest Book Entries -->
-        <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+        <div v-for="entry in guestEntries" :key="entry.timestamp" class="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
           <div class="flex items-center justify-between">
-            <div class="font-medium">Hadi</div>
-            <div class="text-sm text-gray-500">2025-07-22 17:35:13</div>
+            <div class="font-medium">{{ entry.name }}</div>
+            <div class="text-sm text-gray-500">{{ formatDate(entry.timestamp) }}</div>
           </div>
-          <p class="mt-2">kwoekwoeowkeowkeowkeo</p>
-        </div>
-
-        <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
-          <div class="flex items-center justify-between">
-            <div class="font-medium">Aril</div>
-            <div class="text-sm text-gray-500">2025-07-23 15:34:02</div>
-          </div>
-          <p class="mt-2">So Sweet</p>
-        </div>
-
-        <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
-          <div class="flex items-center justify-between">
-            <div class="font-medium">Abel</div>
-            <div class="text-sm text-gray-500">2025-07-25 22:00:59</div>
-          </div>
-          <p class="mt-2">ANJAY MABARRRRRRRRR</p>
-        </div>
-
-        <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
-          <div class="flex items-center justify-between">
-            <div class="font-medium">Si Tampan</div>
-            <div class="text-sm text-gray-500">2025-07-26 10:31:34</div>
-          </div>
-          <p class="mt-2">ORANG GANTENGGGGGGGGGGGG</p>
+          <p class="mt-2">{{ entry.message }}</p>
         </div>
       </div>
     </section>
-
   </div>
 </template>
+
+<script setup>
+import { ref, onMounted } from 'vue'
+
+const guestEntries = ref([])
+
+const formatDate = (timestamp) => {
+  return new Date(timestamp).toLocaleString()
+}
+
+const fetchGuestEntries = async () => {
+  try {
+    const response = await fetch('/data/data.json')
+    guestEntries.value = await response.json()
+  } catch (error) {
+    console.error('Error fetching guest entries:', error)
+  }
+}
+
+// Initial fetch
+onMounted(() => {
+  fetchGuestEntries()
+
+  // Auto update every 30 seconds
+  setInterval(fetchGuestEntries, 30000)
+})
+</script>
