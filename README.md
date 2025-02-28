@@ -48,6 +48,23 @@ docker stop hexanest-app
 docker start hexanest-app
 ```
 
+## Server Setup 
+
+### Cek Port Server
+
+```sh
+Cek dan pastikan port server pada `src\components\Hal5Component.vue`, dap pastikan sesuai dengan port server projek
+```
+
+### Menjalankan Server Untuk Handler Buku Tamu
+
+```sh
+node server.js
+```
+
+
+
+
 
 
 
