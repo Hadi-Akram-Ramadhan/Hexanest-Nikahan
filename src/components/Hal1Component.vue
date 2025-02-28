@@ -14,7 +14,7 @@
       <div class="text-center">
         <p class="text-[22px] text-gray-700 font-['Times_New_Roman']">hari yang indah di bulan april</p>
         <p class="text-[22px] text-gray-700 mb-4 font-['Times_New_Roman']">Kami berdua akan menikah</p>
-        <h1 class="text-[24px] md:text-4xl font-semibold mb-6 font-['Times_New_Roman']">Hadooyy ♥ Hutao</h1>
+        <h1 class="text-[24px] md:text-4xl font-semibold mb-6 font-['Times_New_Roman'] text-gray-700">Hadooyy ♥ Hutao</h1>
         <p class="text-[22px] text-gray-700 font-['Times_New_Roman']">Sabtu, 25 April 2020, pukul 17.00</p>
       </div>
     </div>
