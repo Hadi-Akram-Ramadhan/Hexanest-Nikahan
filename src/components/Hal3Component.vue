@@ -8,12 +8,12 @@
         <img src="#" alt="Map" class="w-full h-64 object-cover rounded-lg shadow-md" />
       </div>
       <div class="text-center">
-        <h3 class="text-[22px] text-gray-700 font-['Times_New_Roman'] font-semibold">Kita Akan Selalu</h3>
-        <p>Turun di Pemberhentian Taman Mini</p>
-        <h3 class="text-[22px] text-gray-700 font-['Times_New_Roman'] font-semibold">Kita Akan Selalu</h3>
-        <p>Turun Di Stasiun Lrt Tamini Sequare</p>
-        <h3 class="text-[22px] text-gray-700 font-['Times_New_Roman'] font-semibold">Kita Akan Selalu</h3>
-        <p>Ikuti saja Google Maps</p>
+        <h3 class="text-[22px] text-gray-700 font-['Times_New_Roman'] font-semibold">Apakah Anda Menaiki Transjakarta?</h3>
+        <p class="text-[22px] text-gray-700 mb-4 font-['Times_New_Roman']">Turun di Pemberhentian Garuda Taman Mini!</p>
+        <h3 class="text-[22px] text-gray-700 font-['Times_New_Roman'] font-semibold">Apakah Anda Menaiki LRT?</h3>
+        <p class="text-[22px] text-gray-700 mb-4 font-['Times_New_Roman']">Turun di Travoy Hub LRT Taman Mini!</p>
+        <h3 class="text-[22px] text-gray-700 font-['Times_New_Roman'] font-semibold">Apakaha Anda Mengendarai Mobil?</h3>
+        <p class="text-[22px] text-gray-700 mb-4 font-['Times_New_Roman']">Cukup Ikuti Sesuai Dengan Lokasi di Peta Online!</p>
       </div>
     </section>
 
