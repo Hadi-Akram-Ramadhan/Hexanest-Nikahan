@@ -4,7 +4,7 @@
     <section class="container mx-auto px-4 py-8 md:py-12">
       <div class="text-center mb-8">
         <h2 class="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4 font-['Times_New_Roman'] text-gray-700">Bisakah Kamu meninggalkan Pesan untuk Kami?</h2>
-        <p class="text-base sm:text-lg md:text-xl text-gray-600 font-['Times_New_Roman']">Kami Akan Baca Semuanya</p>
+        <p class="text-base sm:text-lg md:text-[22px] text-gray-700 font-['Times_New_Roman']">Kami Akan Baca Semuanya!</p>
       </div>
 
       <div class="max-w-2xl mx-auto space-y-4 px-4 sm:px-6">
