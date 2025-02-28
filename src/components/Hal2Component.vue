@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full min-h-screen bg-yellow-50 h-full">
+  <div class="w-full min-h-full bg-yellow-50 h-full">
     <!-- Gallery Section -->
     <section class="container mx-auto px-4 pb-16 bg-yellow-50 w-full h-full min-h-screen">
       <div class="text-center">

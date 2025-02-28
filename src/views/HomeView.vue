@@ -4,6 +4,7 @@ import { ref } from 'vue'
 import Hal1 from '../components/Hal1Component.vue'
 import Hal2 from '../components/Hal2Component.vue'
 import Hal3 from '../components/Hal3Component.vue'
+import Hal4 from '../components/Hal4Component.vue'
 const message = ref('Hello Vue 3 + Vite')
 const router = useRouter()
 
@@ -16,5 +17,6 @@ const goToHome = () => {
     <Hal1 />
     <Hal2 />
     <Hal3 />
+    <Hal4 />
   </div>
 </template>
