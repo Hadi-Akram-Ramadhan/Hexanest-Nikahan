@@ -55,3 +55,9 @@ onMounted(() => {
   transform: translateY(0);
 }
 </style>
+
+<style>
+html {
+  scroll-behavior: smooth;
+}
+</style>
